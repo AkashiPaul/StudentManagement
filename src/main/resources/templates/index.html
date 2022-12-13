@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  
+  min-height: 100vh;
+  background: url("bg.png"), -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
+}
+
+</style>
+</head>
+<center>
+<body>
+		<h1>Welcome admin</h1><br>
+		
+		<h2>Enter the Student details</h2><br>
+		
+	 <h3><a th:href="@{/student1}">Semester 1</a></h3><br>
+	 
+	  <h3><a th:href="@{/student2}">Semester 2</a></h3>
+</body>
+</center>
+</html>
